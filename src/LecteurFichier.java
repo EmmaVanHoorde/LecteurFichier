@@ -6,9 +6,6 @@ public class LecteurFichier implements Interface {
 	private File fichier;
 	FileInputStream pointeur;
 	private LinkedList<String> contenu;
-	private BufferedReader buffer;
-	private FileInputStream lecteur;
-
 	
 	public LecteurFichier(String nom)
 	{
@@ -50,7 +47,6 @@ public class LecteurFichier implements Interface {
             mot += this.getContenu().get(i);
             longueur += this.getContenu().get(i).length();
         }
-        //System.out.println(longueur);
         return mot;
 
 	}
